@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1rem = 10px for easy font scaling */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+:root {
+  /* Background Colors */
+  --bg-main: #0a111b;
+  --bg-dark: #0a0f1c;
+  --bg-card: #0f172a;
+  --bg-light: #0f1725;
+
+  /* Primary Neon Green */
+  --primary: #5ee5a3;
+  --primary-light: #77d1b3;
+  --primary-dark: #6fd5a8;
+
+  /* Glow Effects */
+  --glow: rgba(0, 255, 178, 0.5);
+  --glow-strong: rgba(0, 255, 178, 0.8);
+
+  /* Text Colors */
+  --text-main: #ffffff;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Font Families */
+  --font-main: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --font-accent: "Orbitron", sans-serif;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-large: 600;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-main);
+}
+
+main {
+  padding-top: 100px;
+}
+
+/* --- HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--bg-light);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h1 {
+  color: var(--text-main);
+  font-weight: var(--fw-large);
+  font-family: var(--font-secondary);
+  font-size: 2.4rem;
+}
+
+.header-left img {
+  height: 50px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  gap: clamp(20px, 4vw, 70px);
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: var(--font-secondary);
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--primary);
+  color: var(--bg-light);
+  box-shadow: 0 0 10px var(--glow);
+}
+
+.header-right img {
+  height: 50px;
+  width: auto;
+  object-fit: cover;
+  border: 2px solid var(--primary-dark);
+  border-radius: 50%;
+  margin-right: 30px;
+}
