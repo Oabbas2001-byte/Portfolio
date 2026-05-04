@@ -21,9 +21,11 @@ Currently laying down the foundational architecture:
 
 ## 🚀 Current Progress
 * Established a high-tech dark theme using global CSS variables.
-* Built a fully responsive top navigation bar linking to core portfolio sections.
+* Built a fully responsive top navigation bar.
+* Designed a responsive Hero section with CSS keyframe animations.
+* Developed the About section detailing my focus on the PERN stack and hardware-software integration.
 
 ## ⏳ Upcoming Features
-* Hero section layout.
-* Dynamic project gallery.
-* Smooth scrolling and intersection observer animations.
+* Dedicated skills and certification showcase.
+* Dynamic project gallery for web apps and engineering architecture.
+* Smooth scrolling and intersection observer animations via Vanilla JS.
