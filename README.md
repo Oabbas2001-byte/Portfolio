@@ -24,8 +24,9 @@ Currently laying down the foundational architecture:
 * Built a fully responsive top navigation bar.
 * Designed a responsive Hero section with CSS keyframe animations.
 * Developed the About section detailing my focus on the PERN stack and hardware-software integration.
+* Created a dynamic Skills grid utilizing CSS Grid to showcase core web fundamentals and my full-stack roadmap.
 
 ## ⏳ Upcoming Features
-* Dedicated skills and certification showcase.
-* Dynamic project gallery for web apps and engineering architecture.
+* Certification showcase for SOC Analyst and cybersecurity progress.
+* Dynamic project gallery for engineering architecture and full-stack apps.
 * Smooth scrolling and intersection observer animations via Vanilla JS.
