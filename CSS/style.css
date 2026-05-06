@@ -37,7 +37,6 @@ html {
   /* Font Families */
   --font-main: "Poppins", sans-serif;
   --font-secondary: "Inter", sans-serif;
-  --font-accent: "Orbitron", sans-serif;
 
   /* Font Weights */
   --fw-light: 300;
@@ -81,6 +80,7 @@ main {
   font-weight: var(--fw-large);
   font-family: var(--font-secondary);
   font-size: 2.4rem;
+  margin-right: 30px;
 }
 
 .header-left img {
@@ -94,7 +94,7 @@ main {
 /* Nav Menu */
 .nav-menu {
   display: flex;
-  gap: clamp(20px, 4vw, 70px);
+  gap: clamp(10px, 4vw, 70px);
   list-style: none;
 }
 
@@ -115,27 +115,44 @@ main {
   box-shadow: 0 0 10px var(--glow);
 }
 
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-hint {
+  display: none;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
+  font-family: var(--font-secondary);
+}
+
 .header-right img {
   height: 50px;
   width: auto;
   object-fit: cover;
   border: 2px solid var(--primary-dark);
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-top: 5px;
 }
 
+/* --- HOME SECTION --- */
 .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1450px;
   width: 100%;
-  margin: -70px auto;
   padding: 0 20px;
-  min-height: 95vh;
+  min-height: 80vh;
 }
 
-/* --- HOME SECTION --- */
 .home-left {
   display: flex;
   flex-direction: column;
@@ -217,14 +234,12 @@ main {
 
 .home-image-container {
   display: flex;
-  width: clamp(250px, 35vw, 450px);
-  height: clamp(250px, 35vw, 450px);
+  width: clamp(250px, 35vw, 350px);
+  height: clamp(250px, 35vw, 350px);
   animation: floatUpDown 5s ease-in-out infinite;
 }
 
 .home-image-container img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   border: 2px solid var(--primary);
   border-radius: 50%;
@@ -324,4 +339,77 @@ main {
 .focus p {
   color: var(--text-muted);
   font-size: 1.5rem;
+}
+
+/* --- SKILLS SECTION --- Continue */
+.skills {
+  max-width: 1450px;
+  margin: 100px auto;
+  padding: 0 20px;
+  min-height: 90vh;
+}
+
+.skills-description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.skills-description h1 {
+  color: var(--primary-light);
+  font-size: 3rem;
+}
+
+.skills-description h2 {
+  color: var(--primary-dark);
+  font-size: clamp(3rem, 4vw, 5rem);
+  text-align: center;
+}
+
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(20px, 4vw, 50px);
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid var(--primary-dark);
+  border-radius: 15px;
+  background-color: var(--bg-card);
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.tech-icon i {
+  font-size: 6rem;
+  color: var(--text-main);
+  transition: color 0.3s ease;
+}
+
+.tech-icon h1 {
+  color: var(--text-main);
+  font-size: 2rem;
+}
+
+.tech-icon h2 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.tech-icon:hover {
+  background-color: var(--bg-main);
+  border-color: var(--primary);
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px var(--glow);
+}
+
+.tech-icon:hover i {
+  color: var(--primary);
 }
