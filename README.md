@@ -27,6 +27,6 @@ Currently laying down the foundational architecture:
 * Created a dynamic Skills grid utilizing CSS Grid to showcase core web fundamentals and my full-stack roadmap.
 
 ## ⏳ Upcoming Features
-* Certification showcase for SOC Analyst and cybersecurity progress.
+* Certification showcase for my progress.
 * Dynamic project gallery for engineering architecture and full-stack apps.
 * Smooth scrolling and intersection observer animations via Vanilla JS.
