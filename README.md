@@ -1,8 +1,8 @@
 # 💻 Personal Developer Portfolio [WIP]
 
-> A custom-built, responsive portfolio designed from scratch to showcase my full-stack engineering projects and technical journey.
+> A custom-built, responsive portfolio designed from scratch to showcase my web development projects and technical journey.
 
-Note: This project is currently under active development.
+**Note:** This project is currently under active development.
 
 ## 🛠 Tech Stack
 
@@ -17,16 +17,17 @@ Currently laying down the foundational architecture:
 * `index.html`: Main entry point featuring the new global header.
 * `CSS/style.css`: Global styles, custom variables, and responsive typography.
 * `JS/script.js`: Interactive logic and DOM manipulation (WIP).
-* `assets/`: Image processing and static files.
+* `assets/`: Image processing, CV, and static files.
 
 ## 🚀 Current Progress
 * Established a high-tech dark theme using global CSS variables.
 * Built a fully responsive top navigation bar.
-* Designed a responsive Hero section with CSS keyframe animations.
-* Developed the About section detailing my focus on the PERN stack and hardware-software integration.
-* Created a dynamic Skills grid utilizing CSS Grid to showcase core web fundamentals and my full-stack roadmap.
+* Designed a responsive Hero section with CSS keyframe animations and an active CV download.
+* Developed the About section detailing my focus on front-end fundamentals and the PERN stack.
+* Created a dynamic Skills grid utilizing CSS Grid to showcase core web technologies.
+* Implemented a Certifications showcase to track my continuous learning and freeCodeCamp progress.
 
 ## ⏳ Upcoming Features
-* Certification showcase for my progress.
-* Dynamic project gallery for engineering architecture and full-stack apps.
+* Dynamic project gallery for my front-end and full-stack web applications.
 * Smooth scrolling and intersection observer animations via Vanilla JS.
+* Interactive contact form.
