@@ -26,8 +26,8 @@ Currently laying down the foundational architecture:
 * Developed the About section detailing my focus on front-end fundamentals and the PERN stack.
 * Created a dynamic Skills grid utilizing CSS Grid to showcase core web technologies.
 * Implemented a Certifications showcase to track my continuous learning and freeCodeCamp progress.
+* Built a dynamic Featured Projects gallery to showcase my full-stack web applications (SaaS Clinic, E-Commerce, Uber Clone) using CSS Grid and interactive UI cards.
 
 ## ⏳ Upcoming Features
-* Dynamic project gallery for my front-end and full-stack web applications.
 * Smooth scrolling and intersection observer animations via Vanilla JS.
 * Interactive contact form.
