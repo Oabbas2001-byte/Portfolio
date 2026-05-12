@@ -22,41 +22,37 @@
         <img src="assets/Green.png" alt="Obada Logo" />
         <h1>Portfolio</h1>
       </div>
-      <div class="header-mid">
-        <nav>
-          <ul class="nav-menu">
-            <li>
-              <a href="#home" class="nav-link" data-target="Home">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link" data-target="About">About</a>
-            </li>
-            <li>
-              <a href="#skills" class="nav-link" data-target="Skills">Skills</a>
-            </li>
-            <li>
-              <a
-                href="#certificate"
-                class="nav-link"
-                data-target="Certifications"
-                >Certifications</a
-              >
-            </li>
-            <li>
-              <a href="#projects" class="nav-link" data-target="Projects"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="nav-link" data-target="Contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="#home" class="nav-link" data-target="Home">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-target="About">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-target="Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#certificate" class="nav-link" data-target="Certifications"
+              >Certifications</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-target="Projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-target="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
       <div class="header-right">
-        <img src="assets/O-logo.png" />
+        <img src="assets/O-logo.png" id="menu-toggle" alt="Menu Toggle" />
+        <span class="menu-hint">Click me for navigation</span>
       </div>
     </header>
     <main>
@@ -282,6 +278,7 @@
           </div>
         </div>
       </section>
+      <!-- Project Section -->
       <section id="projects" class="projects">
         <div class="section-header">
           <h2>Featured Projects</h2>
@@ -469,7 +466,115 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+          <form
+            class="contact-card form-card"
+            action="https://formspree.io/f/mgodaaqq"
+            method="POST"
+          >
+            <div class="input-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="User Name" required />
+            </div>
+
+            <div class="input-group">
+              <label>Email Address</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your-Email@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label>Your Message</label>
+              <textarea
+                name="message"
+                placeholder="Tell me about your project..."
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <div class="contact-info-column">
+            <div class="contact-card info-card">
+              <h3>Contact Information</h3>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                <div class="info-text">
+                  <span class="label">Email</span>
+                  <span class="value">abbas.obada.business2@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="fas fa-phone"></i></div>
+                <div class="info-text">
+                  <span class="label">Phone</span>
+                  <span class="value">+962 7 9380 3062</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-text">
+                  <span class="label">Location</span>
+                  <span class="value">Amman, Jordan</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card social-card">
+              <h3>Connect With Me</h3>
+              <div class="social-links">
+                <a
+                  href="https://github.com/Oabbas2001-byte"
+                  target="_blank"
+                  class="social-box"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/obada-abbas-5a7451223"
+                  target="_blank"
+                  class="social-box"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://wa.me/962793803062?text=hello%20i%20saw%20your%20portfolio"
+                  target="_blank"
+                  class="social-box"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="JS/script.js"></script>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          Designed & Built from scratch by
+          <span class="highlight">Eng. Obada Abbas</span>
+          using Vanilla HTML, CSS, and JS.
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
