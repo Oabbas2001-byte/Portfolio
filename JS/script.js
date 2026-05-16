@@ -15,14 +15,15 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.15 
+  threshold: 0.15
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
-      observer.unobserve(entry.target); 
+    } else {
+      entry.target.classList.remove('show');
     }
   });
 }, observerOptions);
@@ -31,6 +32,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 const hiddenElements = document.querySelectorAll('.project-card, .cert-card, .tech-icon, .about-left, .about-right');
 
 hiddenElements.forEach((el) => {
-  el.classList.add('hidden');
+  el.classList.add('hidden'); 
   observer.observe(el);
 });
