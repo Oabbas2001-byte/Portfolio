@@ -29,7 +29,8 @@ Currently laying down the foundational architecture:
 * Built a dynamic Featured Projects gallery to showcase my full-stack web applications using CSS Grid.
 * Integrated a fully functional Contact Form utilizing Formspree, alongside a 3D-styled social links panel.
 * Designed a custom Footer with a "Back to Top" navigation element.
+* Engineered a fully responsive layout using Media Queries for seamless mobile and tablet UI/UX.
+* Implemented smooth scrolling and Intersection Observer fade-in animations via Vanilla JS.
 
 ## ⏳ Upcoming Features
-* Smooth scrolling and intersection observer animations via Vanilla JS.
-* Responsive layout optimizations (Media Queries) for Mobile, Tablet, and small screens to ensure effective UI/UX.
+* Performance optimization and continuous content updates.
